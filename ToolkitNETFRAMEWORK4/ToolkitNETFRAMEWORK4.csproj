@@ -57,6 +57,7 @@
     <Compile Include="Algorithms\SeedLessThanRuns.cs" />
     <Compile Include="Console\BarDrawerByPercentage.cs" />
     <Compile Include="Console\ConsoleBarDrawer.cs" />
+    <Compile Include="Console\Menu.cs" />
     <Compile Include="EventArgs\ActionEventArgs.cs" />
     <Compile Include="EventArgs\DataCollectionEventArgs.cs" />
     <Compile Include="Factories\PeriodicMethodInvokerFactory.cs" />
