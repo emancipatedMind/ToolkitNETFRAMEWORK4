@@ -3,7 +3,6 @@
     using System.Collections.Generic;
     using System.Collections;
     using ToolkitNFW4.EventArgs;
-    using System.Linq;
 
     public class CustomCollection<T> : IEnumerable<T> {
         public event EventHandler<GenericCollectionEventArgs<T>> CollectionAddedTo;
@@ -11,16 +10,20 @@
 
         List<T> _collection = new List<T>();
 
+        public void AddRange(IEnumerable<T> range) {
+            _collection.AddRange(range);
+            CollectionAddedTo?.Invoke(this, new GenericCollectionEventArgs<T>(range));
+        }
+
         public void Clear() {
             var clone = new List<T>(_collection);
             _collection.Clear();
             CollectionCleared?.Invoke(this, new GenericCollectionEventArgs<T>(clone));
         }
 
-        public void AddRange(IEnumerable<T> range) {
-            _collection.AddRange(range);
-            CollectionAddedTo?.Invoke(this, new GenericCollectionEventArgs<T>(range));
-        }
+        public int Count => _collection.Count;
+
+        public void ForEach(Action<T> action) => _collection.ForEach(action);
 
         public IEnumerator<T> GetEnumerator() =>
             _collection.GetEnumerator();
