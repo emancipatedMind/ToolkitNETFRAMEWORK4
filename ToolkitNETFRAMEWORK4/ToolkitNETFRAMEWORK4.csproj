@@ -82,6 +82,7 @@
     <Compile Include="Console\BarDrawerByPercentage.cs" />
     <Compile Include="Console\ConsoleBarDrawer.cs" />
     <Compile Include="Console\Menu.cs" />
+    <Compile Include="Diagnostics\Time.cs" />
     <Compile Include="EventArgs\ActionEventArgs.cs" />
     <Compile Include="EventArgs\DataCollectionEventArgs.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
