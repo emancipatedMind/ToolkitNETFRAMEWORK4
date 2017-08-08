@@ -78,6 +78,7 @@
     <Compile Include="Algorithms\RunsLessThanSeed.cs" />
     <Compile Include="Algorithms\SeedLessThanRuns.cs" />
     <Compile Include="Common\OperationResult.cs" />
+    <Compile Include="Common\Operations.cs" />
     <Compile Include="Console\BarDrawerByPercentage.cs" />
     <Compile Include="Console\ConsoleBarDrawer.cs" />
     <Compile Include="Console\Menu.cs" />
