@@ -83,6 +83,7 @@
     <Compile Include="Console\ConsoleBarDrawer.cs" />
     <Compile Include="Console\Menu.cs" />
     <Compile Include="Diagnostics\RandomDataGenerator.cs" />
+    <Compile Include="Diagnostics\ReflectionServices.cs" />
     <Compile Include="Diagnostics\Time.cs" />
     <Compile Include="EventArgs\ActionEventArgs.cs" />
     <Compile Include="EventArgs\DataCollectionEventArgs.cs" />
