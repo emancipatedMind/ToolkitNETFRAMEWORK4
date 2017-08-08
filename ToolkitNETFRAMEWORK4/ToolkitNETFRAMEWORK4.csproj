@@ -82,6 +82,7 @@
     <Compile Include="Console\Menu.cs" />
     <Compile Include="EventArgs\ActionEventArgs.cs" />
     <Compile Include="EventArgs\DataCollectionEventArgs.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Factories\PeriodicMethodInvokerFactory.cs" />
     <Compile Include="XAML\AwaitableDelegateCommand.cs" />
     <Compile Include="XAML\CommandExtensions.cs" />
