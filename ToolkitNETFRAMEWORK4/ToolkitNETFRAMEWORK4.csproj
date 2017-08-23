@@ -74,7 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\BoyerMoore.cs" />
+    <Compile Include="Geometry\AngleConversions.cs" />
     <Compile Include="Algorithms\PeriodicMethodInvoker.cs" />
+    <Compile Include="Geometry\LineSegment2D.cs" />
+    <Compile Include="Geometry\Point2D.cs" />
     <Compile Include="Algorithms\RunsLessThanSeed.cs" />
     <Compile Include="Algorithms\SeedLessThanRuns.cs" />
     <Compile Include="Common\OperationResult.cs" />
