@@ -1,10 +1,10 @@
 ﻿namespace ToolkitNFW4.Geometry {
     public struct Point2D {
 
-        public decimal X { get; private set; }
-        public decimal Y { get; private set; }
+        public double X { get; private set; }
+        public double Y { get; private set; }
 
-        public Point2D(decimal x, decimal y) : this() {
+        public Point2D(double x, double y) : this() {
             X = x;
             Y = y;
         }
