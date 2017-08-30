@@ -1,6 +1,6 @@
 ﻿namespace ToolkitNFW4.Geometry {
     using System;
-    public class LineSegment2D {
+    public class TwoDLineSegment {
 
         public double X1 { get; private set; }
         public double Y1 { get; private set; }
@@ -11,10 +11,10 @@
         public double Theta { get; private set; }
         public double Length { get; private set; }
 
-        public LineSegment2D(Point2D point) : this(point.X, point.Y, 0, 0) { }
-        public LineSegment2D(Point2D point2, Point2D point1) : this(point2.X, point2.Y,point1.X, point1.Y) { }
+        public TwoDLineSegment(TwoDPoint point) : this(point.X, point.Y, 0, 0) { }
+        public TwoDLineSegment(TwoDPoint point2, TwoDPoint point1) : this(point2.X, point2.Y,point1.X, point1.Y) { }
 
-        public LineSegment2D(double x2, double y2, double x1, double y1) {
+        public TwoDLineSegment(double x2, double y2, double x1, double y1) {
             X1 = x1;
             Y1 = y1;
             X2 = x2;
@@ -37,7 +37,7 @@
             Length = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
         }
 
-        public LineSegment2D(double length, double theta) {
+        public TwoDLineSegment(double length, double theta) {
             Length = length;
             Theta = theta;
 
