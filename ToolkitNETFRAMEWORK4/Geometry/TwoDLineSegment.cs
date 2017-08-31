@@ -20,8 +20,8 @@
         public static TwoDLineSegment FromPolarCoordinates(double length, double theta) =>
             CalculateFromPolarCoordinates(length, theta, 0, 0);
 
-        private static TwoDLineSegment CalculateFromPolarCoordinates(double length1, double theta1, double length2, double theta2) =>
-            CalculateFromCartesianCoordinates(length1 * Math.Cos(theta1), length1 * Math.Sin(theta1), length2 * Math.Cos(theta2), length2 * Math.Sin(theta2));
+        private static TwoDLineSegment CalculateFromPolarCoordinates(double length2, double theta2, double length1, double theta1) =>
+            CalculateFromCartesianCoordinates(length2 * Math.Cos(theta2), length2 * Math.Sin(theta2), length1 * Math.Cos(theta1), length1 * Math.Sin(theta1));
 
         private static TwoDLineSegment CalculateFromCartesianCoordinates(double x2, double y2, double x1, double y1) {
             double deltaY = y2 - y1;
@@ -33,7 +33,7 @@
             if (deltaX == 0) {
                 slope = double.PositiveInfinity;
                 yIntercept = double.PositiveInfinity;
-                theta = (deltaY < 0 ? 1.5 * Math.PI : Math.PI);
+                theta = (deltaY < 0 ? 1.5 * Math.PI : .5 * Math.PI);
             }
             else {
                 slope = deltaY / deltaX;
