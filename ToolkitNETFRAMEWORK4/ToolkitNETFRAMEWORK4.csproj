@@ -74,6 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\BoyerMoore.cs" />
+    <Compile Include="Algorithms\SequenceChecker.cs" />
+    <Compile Include="Algorithms\SequenceSeeker.cs" />
     <Compile Include="Geometry\AngleConversions.cs" />
     <Compile Include="Algorithms\PeriodicMethodInvoker.cs" />
     <Compile Include="Geometry\TwoDLineSegment.cs" />
