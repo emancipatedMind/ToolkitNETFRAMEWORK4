@@ -27,9 +27,9 @@
         /// <summary>
         /// Checks to see if source array matches Sequence at index 0.
         /// </summary>
-        /// <param name="stream">Stream to check for StopCondition.</param>
+        /// <param name="stream">Stream to check for Sequence.</param>
         /// <param name="restoreStream">Whether stream is restored to pre-check position.</param>
-        /// <returns>Whether StopCondition was found at current position.</returns>
+        /// <returns>Whether Sequence was found at current position.</returns>
         public bool IsSequenceMatchedByLowestBytesIn(MemoryStream stream, bool restoreStream = true) {
             byte[] dest = new byte[Sequence.Length];
             long position = stream.Position;

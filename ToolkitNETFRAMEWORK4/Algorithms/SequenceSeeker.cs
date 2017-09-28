@@ -22,7 +22,7 @@
         /// <summary>
         /// Resets the stream and seeks the very first instance of Sequence. Stream is left just after Sequence if found. If not, stream is left reset.
         /// </summary>
-        /// <param name="stream">MemoryStream to search for start condition in.</param>
+        /// <param name="stream">MemoryStream to search for Sequence in.</param>
         /// <returns>Whether Sequence was found.</returns>
         public bool SeekFirstSequence(MemoryStream stream) {
             stream.Position = 0;
