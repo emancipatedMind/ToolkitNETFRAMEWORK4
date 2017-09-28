@@ -25,12 +25,28 @@
 
     public class OperationResult {
 
+        public OperationResult(IEnumerable<Exception> exceptions) {
+            Successful = false;
+            Exceptions = exceptions?.ToArray() ?? new Exception[0];
+        }
+
         public OperationResult(bool successful, IEnumerable<Exception> exceptions = null) {
             Successful = successful;
             Exceptions = exceptions?.ToArray() ?? new Exception[0];
         }
 
+        public OperationResult() {
+            Successful = true;
+            Exceptions = new Exception[0];
+        }
+
+        public OperationResult(OperationResult result) {
+            Successful = result.Successful;
+            Exceptions = result.Exceptions;
+        }
+
         public bool Successful { get; }
         public Exception[] Exceptions { get; }
+
     }
 }
